@@ -1,0 +1,770 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GlpFlow — Support, Privacy Policy & Terms</title>
+  <meta name="description" content="GlpFlow Support page with Privacy Policy and Terms of Use (EN/ES/PT)." />
+  <meta name="robots" content="index,follow" />
+
+  <style>
+    :root{
+      --bg:#0b1220;
+      --card:#0f1a33;
+      --text:#e8eefc;
+      --muted:#b9c6ea;
+      --line:rgba(255,255,255,.12);
+      --accent:#5b8cff;
+      --accent2:#8b5cf6;
+      --radius:16px;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --font: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+    *{ box-sizing:border-box; }
+    body{
+      margin:0;
+      font-family:var(--font);
+      background: radial-gradient(1200px 800px at 15% 10%, rgba(91,140,255,.25), transparent 55%),
+                  radial-gradient(900px 700px at 80% 20%, rgba(139,92,246,.22), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.55;
+    }
+    .wrap{
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 28px 18px 60px;
+    }
+    header{
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:12px;
+      margin-bottom: 18px;
+      flex-wrap:wrap;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      min-width: 260px;
+    }
+    .logo{
+      width:44px;height:44px;
+      border-radius:14px;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      box-shadow: var(--shadow);
+      display:grid;place-items:center;
+      font-weight:800;
+      letter-spacing:.5px;
+      flex:0 0 auto;
+    }
+    .brand h1{
+      font-size: 20px;
+      margin:0;
+      letter-spacing:.2px;
+    }
+    .brand p{
+      margin:2px 0 0 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .topbar{
+      display:flex;
+      gap:10px;
+      align-items:center;
+      justify-content:flex-end;
+      flex-wrap:wrap;
+    }
+    .nav{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      align-items:center;
+    }
+    .pill, .langbtn{
+      border:1px solid var(--line);
+      color: var(--muted);
+      padding:8px 12px;
+      border-radius: 999px;
+      text-decoration:none;
+      font-size: 13px;
+      background: rgba(255,255,255,.04);
+      cursor:pointer;
+      user-select:none;
+    }
+    .pill:hover, .langbtn:hover{
+      border-color: rgba(255,255,255,.22);
+      color: var(--text);
+    }
+    .langbtn[aria-pressed="true"]{
+      border-color: rgba(255,255,255,.35);
+      color: var(--text);
+      background: rgba(255,255,255,.08);
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+      margin-top: 14px;
+    }
+    @media(min-width: 860px){
+      .grid{ grid-template-columns: 1.15fr .85fr; }
+    }
+
+    .card{
+      background: rgba(15,26,51,.86);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 18px;
+    }
+    .card h2{
+      margin: 0 0 10px 0;
+      font-size: 18px;
+    }
+    .card h3{
+      margin: 18px 0 8px 0;
+      font-size: 15px;
+      color: var(--text);
+    }
+    .card p, .card li{
+      color: var(--muted);
+      font-size: 14px;
+      margin: 10px 0;
+    }
+    .card a{ color: #cfe0ff; }
+    .btnrow{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top: 12px;
+    }
+    .btn{
+      display:inline-block;
+      padding:10px 12px;
+      border-radius: 12px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.05);
+      color: var(--text);
+      text-decoration:none;
+      font-size: 14px;
+    }
+    .btn.primary{
+      border:none;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+    }
+    .btn:hover{ transform: translateY(-1px); }
+
+    .small{
+      font-size: 12px;
+      color: rgba(185,198,234,.85);
+      margin-top: 10px;
+    }
+    footer{
+      margin-top: 18px;
+      color: rgba(185,198,234,.75);
+      font-size: 12px;
+      text-align:center;
+    }
+    hr{
+      border:none;
+      border-top:1px solid var(--line);
+      margin: 18px 0;
+    }
+    code{
+      font-family: var(--mono);
+      background: rgba(255,255,255,.06);
+      padding: 2px 6px;
+      border-radius: 8px;
+      border: 1px solid rgba(255,255,255,.10);
+      color: var(--text);
+      font-size: 12px;
+    }
+    .notice{
+      border-left: 4px solid rgba(91,140,255,.9);
+      padding: 10px 12px;
+      background: rgba(91,140,255,.10);
+      border-radius: 12px;
+      margin-top: 12px;
+    }
+    .mutedbox{
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.03);
+      padding: 12px;
+      border-radius: 12px;
+    }
+
+    /* Language blocks */
+    [data-lang]{ display:none; }
+    [data-lang].active{ display:block; }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">G</div>
+        <div>
+          <h1>GlpFlow</h1>
+          <p id="subtitle">Support • Privacy Policy • Terms</p>
+        </div>
+      </div>
+
+      <div class="topbar">
+        <div class="nav" aria-label="Navigation">
+          <a class="pill" href="#support" data-i18n="nav_support">Support</a>
+          <a class="pill" href="#privacy" data-i18n="nav_privacy">Privacy</a>
+          <a class="pill" href="#terms" data-i18n="nav_terms">Terms</a>
+          <a class="pill" href="#contact" data-i18n="nav_contact">Contact</a>
+        </div>
+
+        <div class="nav" aria-label="Language">
+          <button class="langbtn" id="btn-en" type="button" aria-pressed="true">EN</button>
+          <button class="langbtn" id="btn-es" type="button" aria-pressed="false">ES</button>
+          <button class="langbtn" id="btn-pt" type="button" aria-pressed="false">PT</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- SUPPORT -->
+    <div class="grid">
+      <section id="support" class="card">
+        <!-- EN -->
+        <div data-lang="en" class="active">
+          <h2>Support</h2>
+          <p>If you need help with GlpFlow (subscriptions, restoring purchases, questions about features, or technical issues), contact us:</p>
+          <ul>
+            <li><strong>Email:</strong> <a href="mailto:contato@i9techia.com.br">contato@i9techia.com.br</a></li>
+          </ul>
+
+          <div class="notice">
+            <p style="margin:0;"><strong>Tip:</strong> When emailing, please include your iPhone model, iOS version, and a short description of the issue.</p>
+          </div>
+
+          <div class="btnrow">
+            <a class="btn primary" href="mailto:contato@i9techia.com.br?subject=GlpFlow%20-%20Support">Email Support</a>
+            <a class="btn" href="#privacy">Privacy Policy</a>
+            <a class="btn" href="#terms">Terms of Use</a>
+          </div>
+
+          <p class="small">
+            GlpFlow is a wellness tracking tool and does not replace professional guidance.
+          </p>
+        </div>
+
+        <!-- ES -->
+        <div data-lang="es">
+          <h2>Soporte</h2>
+          <p>Si necesitas ayuda con GlpFlow (suscripción, restauración de compras, dudas sobre funciones o problemas técnicos), contáctanos:</p>
+          <ul>
+            <li><strong>Email:</strong> <a href="mailto:contato@i9techia.com.br">contato@i9techia.com.br</a></li>
+          </ul>
+
+          <div class="notice">
+            <p style="margin:0;"><strong>Consejo:</strong> Al escribir, incluye el modelo de iPhone, la versión de iOS y una breve descripción del problema.</p>
+          </div>
+
+          <div class="btnrow">
+            <a class="btn primary" href="mailto:contato@i9techia.com.br?subject=GlpFlow%20-%20Soporte">Enviar email</a>
+            <a class="btn" href="#privacy">Política de Privacidad</a>
+            <a class="btn" href="#terms">Términos de Uso</a>
+          </div>
+
+          <p class="small">
+            GlpFlow es una herramienta de bienestar y no sustituye la orientación profesional.
+          </p>
+        </div>
+
+        <!-- PT -->
+        <div data-lang="pt">
+          <h2>Suporte</h2>
+          <p>Se você precisa de ajuda com o GlpFlow (assinatura, restauração de compras, dúvidas sobre recursos ou problemas técnicos), fale com a gente:</p>
+          <ul>
+            <li><strong>E-mail:</strong> <a href="mailto:contato@i9techia.com.br">contato@i9techia.com.br</a></li>
+          </ul>
+
+          <div class="notice">
+            <p style="margin:0;"><strong>Dica:</strong> ao enviar e-mail, informe o modelo do iPhone, versão do iOS e uma breve descrição do problema.</p>
+          </div>
+
+          <div class="btnrow">
+            <a class="btn primary" href="mailto:contato@i9techia.com.br?subject=GlpFlow%20-%20Suporte">Enviar e-mail</a>
+            <a class="btn" href="#privacy">Política de Privacidade</a>
+            <a class="btn" href="#terms">Termos de Uso</a>
+          </div>
+
+          <p class="small">
+            O GlpFlow é uma ferramenta de bem-estar e não substitui orientação profissional.
+          </p>
+        </div>
+      </section>
+
+      <!-- QUICK FACTS -->
+      <aside class="card">
+        <!-- EN -->
+        <div data-lang="en" class="active">
+          <h2>Quick info</h2>
+          <p><strong>App:</strong> GlpFlow</p>
+          <p><strong>Contact:</strong> <a href="mailto:contato@i9techia.com.br">contato@i9techia.com.br</a></p>
+          <p><strong>Data:</strong> stored locally on device (offline-first)</p>
+          <p><strong>Subscriptions:</strong> managed by the App Store</p>
+          <hr />
+          <p class="small">For subscription management (cancel/renew), use your Apple ID settings. Uninstalling the app does not cancel a subscription.</p>
+        </div>
+
+        <!-- ES -->
+        <div data-lang="es">
+          <h2>Información rápida</h2>
+          <p><strong>App:</strong> GlpFlow</p>
+          <p><strong>Contacto:</strong> <a href="mailto:contato@i9techia.com.br">contato@i9techia.com.br</a></p>
+          <p><strong>Datos:</strong> guardados localmente en el dispositivo (offline-first)</p>
+          <p><strong>Suscripciones:</strong> gestionadas por App Store</p>
+          <hr />
+          <p class="small">Para gestionar la suscripción (cancelar/renovar), usa la configuración de tu Apple ID. Desinstalar la app no cancela la suscripción.</p>
+        </div>
+
+        <!-- PT -->
+        <div data-lang="pt">
+          <h2>Informações rápidas</h2>
+          <p><strong>App:</strong> GlpFlow</p>
+          <p><strong>Contato:</strong> <a href="mailto:contato@i9techia.com.br">contato@i9techia.com.br</a></p>
+          <p><strong>Dados:</strong> armazenados localmente no dispositivo (offline-first)</p>
+          <p><strong>Assinaturas:</strong> gerenciadas pela App Store</p>
+          <hr />
+          <p class="small">Para gerenciar assinatura (cancelar/renovar), use as configurações do seu Apple ID. Desinstalar o app não cancela a assinatura.</p>
+        </div>
+      </aside>
+    </div>
+
+    <!-- PRIVACY POLICY -->
+    <section id="privacy" class="card" style="margin-top:14px;">
+      <!-- EN -->
+      <div data-lang="en" class="active">
+        <h2>Privacy Policy — GlpFlow (iOS)</h2>
+        <p><strong>Last updated:</strong> 17/12/2025</p>
+
+        <p>GlpFlow respects your privacy and was built with transparency and full user control over personal data. This Policy explains how information is handled when using the app.</p>
+
+        <h3>1. General Information</h3>
+        <p>GlpFlow is a habits and wellness tracking app that operates offline-first, without account creation, without login, and without external servers for storing personal data.</p>
+
+        <h3>2. Data Collection and Storage</h3>
+        <p>GlpFlow does not collect personal data on servers, does not use cloud storage, and does not transmit information to third parties.</p>
+        <p>All data entered by the user — such as habits, daily logs, wellness-related information, and preferences — is stored exclusively on the user’s device using local storage.</p>
+
+        <h3>2.1 Local Storage Limitations</h3>
+        <p>By using local storage only, the user acknowledges that:</p>
+        <ul>
+          <li>No data is sent to external servers or cloud services;</li>
+          <li>Data is not synced across devices;</li>
+          <li>Data cannot be transferred when switching devices;</li>
+          <li>There is no automatic backup;</li>
+          <li>In case of loss, theft, formatting, or device replacement, data will be permanently lost;</li>
+          <li>Uninstalling the app permanently deletes all locally stored data;</li>
+          <li>Each device works in isolation.</li>
+        </ul>
+        <p>By using GlpFlow, the user agrees to these technical limitations.</p>
+
+        <h3>3. Apple Health Integrations</h3>
+        <p>GlpFlow may integrate with Apple Health only with the user’s explicit authorization. Information accessed or recorded via this integration remains stored locally on the device and is not shared with third parties.</p>
+
+        <h3>4. Information Sharing</h3>
+        <p>GlpFlow does not share personal data with third parties, advertisers, commercial partners, or external services.</p>
+
+        <h3>4.1 No Data Transmission</h3>
+        <p>The app does not transmit, send, or store information in APIs, servers, external services, or cloud infrastructure. All content remains exclusively under the user’s control on the device.</p>
+
+        <h3>5. Subscriptions and Payment Information</h3>
+        <p>GlpFlow may offer Premium features via paid subscriptions. Payments are processed exclusively by the device’s app store, and GlpFlow does not collect or store financial data such as credit card or bank information.</p>
+        <p>We receive only limited subscription status information (active, expired, or canceled), used solely to enable or restrict Premium features.</p>
+
+        <h3>6. Information Security</h3>
+        <p>Because data is stored locally, security also depends on the user’s own measures, such as device passcode, biometrics, and keeping the operating system up to date.</p>
+        <p>The developer does not have access to stored data and cannot recover it in case of loss.</p>
+
+        <h3>7. Data Deletion</h3>
+        <p>The user can delete all locally stored data at any time using the “Delete all data” option available in the app. This action is irreversible and permanently removes all stored information.</p>
+
+        <h3>8. Changes to this Policy</h3>
+        <p>This Policy may be updated periodically. Any relevant change will be informed within the app. Since no data is collected on servers, no external notifications are sent.</p>
+
+        <h3>9. Contact</h3>
+        <p>If you have questions about this Privacy Policy, contact us using the channel listed on the App Store page or email: <a href="mailto:contato@i9techia.com.br">contato@i9techia.com.br</a>.</p>
+      </div>
+
+      <!-- ES -->
+      <div data-lang="es">
+        <h2>Política de Privacidad — GlpFlow (iOS)</h2>
+        <p><strong>Última actualización:</strong> 17/12/2025</p>
+
+        <p>GlpFlow respeta tu privacidad y fue desarrollado con enfoque en transparencia y control total del usuario sobre sus propios datos. Esta Política explica cómo se tratan las informaciones al usar la app.</p>
+
+        <h3>1. Información General</h3>
+        <p>GlpFlow es una app de seguimiento de hábitos y bienestar que funciona con modelo offline-first, sin creación de cuenta, sin login y sin servidores externos para almacenar datos personales.</p>
+
+        <h3>2. Recopilación y Almacenamiento de Datos</h3>
+        <p>GlpFlow no recopila datos personales en servidores, no utiliza nube y no transmite información a terceros.</p>
+        <p>Todos los datos introducidos por el usuario — como hábitos, registros diarios, información de bienestar y preferencias — se almacenan exclusivamente en el dispositivo del usuario mediante almacenamiento local.</p>
+
+        <h3>2.1 Limitaciones del Almacenamiento Local</h3>
+        <p>Al usar solo almacenamiento local, el usuario reconoce que:</p>
+        <ul>
+          <li>No se envía ningún dato a servidores externos o servicios en la nube;</li>
+          <li>Los datos no se sincronizan entre dispositivos;</li>
+          <li>No es posible transferir datos al cambiar de dispositivo;</li>
+          <li>No hay copia de seguridad automática;</li>
+          <li>En caso de pérdida, robo, formateo o cambio de dispositivo, los datos se perderán permanentemente;</li>
+          <li>Al desinstalar la app, todos los datos almacenados localmente se eliminan de forma definitiva;</li>
+          <li>Cada dispositivo funciona de forma aislada.</li>
+        </ul>
+        <p>Al utilizar GlpFlow, el usuario acepta estas limitaciones técnicas.</p>
+
+        <h3>3. Integración con Apple Health</h3>
+        <p>GlpFlow puede integrarse con Apple Health solo mediante autorización explícita del usuario. La información accedida o registrada en esta integración permanece almacenada localmente en el dispositivo y no se comparte con terceros.</p>
+
+        <h3>4. Compartición de Información</h3>
+        <p>GlpFlow no comparte datos personales con terceros, anunciantes, socios comerciales o servicios externos.</p>
+
+        <h3>4.1 Ausencia Total de Transmisión de Datos</h3>
+        <p>La app no transmite, envía ni almacena información en APIs, servidores, servicios externos o infraestructura en la nube. Todo el contenido permanece exclusivamente bajo control del usuario en su dispositivo.</p>
+
+        <h3>5. Suscripciones e Información de Pago</h3>
+        <p>GlpFlow puede ofrecer funciones Premium mediante suscripciones pagas. Los pagos se procesan exclusivamente por la tienda de apps del dispositivo, y GlpFlow no recopila ni almacena datos financieros como tarjeta de crédito o datos bancarios.</p>
+        <p>Recibimos solo información limitada sobre el estado de la suscripción (activa, expirada o cancelada), usada exclusivamente para habilitar o restringir funciones Premium.</p>
+
+        <h3>6. Seguridad de la Información</h3>
+        <p>Como los datos se almacenan localmente, la seguridad depende también de medidas adoptadas por el usuario, como contraseña, biometría y actualización del sistema operativo.</p>
+        <p>El desarrollador no tiene acceso a los datos almacenados y no puede recuperarlos en caso de pérdida.</p>
+
+        <h3>7. Eliminación de Datos</h3>
+        <p>El usuario puede eliminar todos los datos almacenados localmente en cualquier momento mediante la opción “Eliminar todos los datos” disponible en la app. Esta acción es irreversible.</p>
+
+        <h3>8. Cambios en esta Política</h3>
+        <p>Esta Política puede actualizarse periódicamente. Cualquier cambio relevante se informará dentro de la app. Como no hay recopilación de datos en servidores, no se envían notificaciones externas.</p>
+
+        <h3>9. Contacto</h3>
+        <p>Si tienes dudas sobre esta Política de Privacidad, contáctanos por el canal indicado en la página de la App Store o por email: <a href="mailto:contato@i9techia.com.br">contato@i9techia.com.br</a>.</p>
+      </div>
+
+      <!-- PT -->
+      <div data-lang="pt">
+        <h2>POLÍTICA DE PRIVACIDADE – GlpFlow (iOS)</h2>
+        <p><strong>Última atualização:</strong> 17/12/2025</p>
+
+        <p>O GlpFlow respeita a sua privacidade e foi desenvolvido com foco em transparência e controle total do usuário sobre seus próprios dados. Esta Política explica como as informações são tratadas ao utilizar o aplicativo.</p>
+
+        <h3>1. Informações Gerais</h3>
+        <p>O GlpFlow é um aplicativo de acompanhamento de hábitos e bem-estar que funciona no modelo offline-first, sem criação de contas, sem login e sem uso de servidores externos para armazenamento de dados pessoais.</p>
+
+        <h3>2. Coleta e Armazenamento de Dados</h3>
+        <p>O GlpFlow não coleta dados pessoais em servidores, não utiliza nuvem e não transmite informações para terceiros.</p>
+        <p>Todos os dados inseridos pelo usuário — como hábitos, registros diários, informações de saúde e preferências — são armazenados exclusivamente no dispositivo do usuário, por meio de armazenamento local.</p>
+
+        <h3>2.1 Limitações do Armazenamento Local</h3>
+        <p>Por utilizar apenas armazenamento local, o usuário reconhece que:</p>
+        <ul>
+          <li>Nenhum dado é enviado para servidores externos ou serviços em nuvem;</li>
+          <li>Os dados não são sincronizados entre dispositivos;</li>
+          <li>Não é possível transferir dados ao trocar de aparelho;</li>
+          <li>Não há backup automático;</li>
+          <li>Em caso de perda, roubo, formatação ou troca do dispositivo, os dados serão permanentemente perdidos;</li>
+          <li>Ao desinstalar o aplicativo, todos os dados armazenados localmente são apagados de forma definitiva;</li>
+          <li>Cada dispositivo funciona de forma isolada.</li>
+        </ul>
+        <p>Ao utilizar o GlpFlow, o usuário concorda com essas limitações técnicas.</p>
+
+        <h3>3. Integrações com Apple Health</h3>
+        <p>O GlpFlow pode integrar-se ao Apple Health apenas mediante autorização explícita do usuário.
+        As informações acessadas ou registradas nessa integração permanecem armazenadas localmente no dispositivo e não são compartilhadas com terceiros.</p>
+
+        <h3>4. Compartilhamento de Informações</h3>
+        <p>O GlpFlow não compartilha dados pessoais com terceiros, anunciantes, parceiros comerciais ou serviços externos.</p>
+
+        <h3>4.1 Ausência Total de Transmissão de Dados</h3>
+        <p>O aplicativo não transmite, envia ou armazena informações em APIs, servidores, serviços externos ou infraestrutura em nuvem. Todo o conteúdo permanece exclusivamente sob controle do usuário no próprio dispositivo.</p>
+
+        <h3>5. Assinaturas e Informações de Pagamento</h3>
+        <p>O GlpFlow pode oferecer recursos Premium por meio de assinaturas pagas.
+        Os pagamentos são processados exclusivamente pela loja de aplicativos do dispositivo, e o GlpFlow não coleta nem armazena dados financeiros, como informações de cartão de crédito ou dados bancários.</p>
+
+        <p>Recebemos apenas informações limitadas sobre o status da assinatura (ativa, expirada ou cancelada), usadas exclusivamente para liberar ou restringir funcionalidades Premium.</p>
+
+        <h3>6. Segurança das Informações</h3>
+        <p>Como os dados permanecem armazenados localmente, a segurança das informações depende também das medidas adotadas pelo próprio usuário, como uso de senha, biometria e atualização do sistema operacional.</p>
+        <p>O desenvolvedor não tem acesso aos dados armazenados e não pode recuperá-los em caso de perda.</p>
+
+        <h3>7. Exclusão de Dados</h3>
+        <p>O usuário pode excluir todos os dados armazenados localmente a qualquer momento por meio da opção “Excluir todos os dados” disponível no aplicativo.
+        Essa ação é irreversível e apaga permanentemente todas as informações armazenadas.</p>
+
+        <h3>8. Alterações nesta Política</h3>
+        <p>Esta Política pode ser atualizada periodicamente. Qualquer alteração relevante será informada dentro do próprio aplicativo. Como não há coleta de dados em servidores, não são enviadas notificações externas.</p>
+
+        <h3>9. Contato</h3>
+        <p>Em caso de dúvidas sobre esta Política de Privacidade, o usuário pode entrar em contato pelo canal informado na página do aplicativo na App Store ou pelo e-mail: <a href="mailto:contato@i9techia.com.br">contato@i9techia.com.br</a>.</p>
+      </div>
+    </section>
+
+    <!-- TERMS OF USE -->
+    <section id="terms" class="card" style="margin-top:14px;">
+      <!-- EN -->
+      <div data-lang="en" class="active">
+        <h2>Terms of Use — GlpFlow (iOS)</h2>
+        <p><strong>Last updated:</strong> 17/12/2025</p>
+
+        <p>By using GlpFlow, you agree to the terms and conditions described below.</p>
+
+        <h3>1. Acceptance of Terms</h3>
+        <p>Using GlpFlow implies full acceptance of these Terms of Use and the Privacy Policy.</p>
+
+        <h3>2. Service Description</h3>
+        <p>GlpFlow is a habits and wellness tracking app that runs locally on the user’s device, without requiring login or continuous internet connection.</p>
+
+        <h3>3. App Usage</h3>
+        <p>The user agrees to use the app lawfully and is responsible for the information entered and for securing their device.</p>
+
+        <h3>4. Premium Features</h3>
+        <p>Some features may be available only to users who purchase a Premium subscription, as described on the app’s payment screens.</p>
+
+        <h3>5. Subscriptions & Auto-Renewal</h3>
+        <h3 style="margin-top:10px;">5.1 Subscriptions</h3>
+        <p>Premium subscriptions are billed by the device’s app store using the user’s account on that platform.</p>
+
+        <h3 style="margin-top:10px;">5.2 Auto-Renewal</h3>
+        <p>Subscriptions automatically renew at the end of each period unless canceled by the user at least 24 (twenty-four) hours before the end of the current period.</p>
+
+        <h3 style="margin-top:10px;">5.3 Management & Cancellation</h3>
+        <p>Subscription management, including cancellation and disabling auto-renewal, must be done directly in the app store settings used for the purchase. Uninstalling the app does not cancel the subscription.</p>
+
+        <h3 style="margin-top:10px;">5.4 Refunds</h3>
+        <p>Refund requests must be made directly through the app store where the purchase was made, according to the platform’s policies. The developer does not have access to the billing system and cannot process refunds.</p>
+
+        <h3>6. Technical Limitations</h3>
+        <p>The user acknowledges that GlpFlow operates exclusively with local storage. Therefore:</p>
+        <ul>
+          <li>No cloud backup is available;</li>
+          <li>Data cannot be recovered after uninstalling or changing devices;</li>
+          <li>Each device stores independent data;</li>
+          <li>The developer is not responsible for data loss caused by device failures, uninstallations, physical damage, or external events.</li>
+        </ul>
+
+        <h3>7. Data Deletion</h3>
+        <p>The user can delete all locally stored data using the option available in the app. This action is permanent and irreversible.</p>
+
+        <h3>8. Disclaimer</h3>
+        <p>GlpFlow does not replace professional guidance. Use of the app is the user’s sole responsibility.</p>
+
+        <h3>9. Changes to Terms</h3>
+        <p>These Terms may be changed at any time. Relevant changes will be communicated within the app.</p>
+
+        <h3>10. Governing Law</h3>
+        <p>These Terms are governed by applicable laws, respecting the current legislation.</p>
+      </div>
+
+      <!-- ES -->
+      <div data-lang="es">
+        <h2>Términos de Uso — GlpFlow (iOS)</h2>
+        <p><strong>Última actualización:</strong> 17/12/2025</p>
+
+        <p>Al usar GlpFlow, aceptas los términos y condiciones descritos a continuación.</p>
+
+        <h3>1. Aceptación de los Términos</h3>
+        <p>El uso de GlpFlow implica la aceptación total de estos Términos de Uso y de la Política de Privacidad.</p>
+
+        <h3>2. Descripción del Servicio</h3>
+        <p>GlpFlow es una app de seguimiento de hábitos y bienestar que funciona localmente en el dispositivo del usuario, sin necesidad de inicio de sesión ni conexión continua a internet.</p>
+
+        <h3>3. Uso de la Aplicación</h3>
+        <p>El usuario se compromete a usar la app de forma lícita y es responsable de la información introducida y de la seguridad de su dispositivo.</p>
+
+        <h3>4. Funciones Premium</h3>
+        <p>Algunas funciones pueden estar disponibles solo para usuarios que adquieran una suscripción Premium, según se describe en las pantallas de pago de la app.</p>
+
+        <h3>5. Suscripciones y Renovación Automática</h3>
+        <h3 style="margin-top:10px;">5.1 Suscripciones</h3>
+        <p>Las suscripciones Premium se cobran por la tienda de apps del dispositivo utilizando la cuenta del usuario en esa plataforma.</p>
+
+        <h3 style="margin-top:10px;">5.2 Renovación Automática</h3>
+        <p>Las suscripciones se renuevan automáticamente al final de cada período, salvo que el usuario cancele al menos 24 (veinticuatro) horas antes del final del período vigente.</p>
+
+        <h3 style="margin-top:10px;">5.3 Gestión y Cancelación</h3>
+        <p>La gestión de la suscripción, incluido cancelar y desactivar la renovación automática, debe hacerse directamente en la configuración de la tienda utilizada para la compra. Desinstalar la app no cancela la suscripción.</p>
+
+        <h3 style="margin-top:10px;">5.4 Reembolsos</h3>
+        <p>Las solicitudes de reembolso deben realizarse directamente en la tienda donde se hizo la compra, según las políticas de la plataforma. El desarrollador no tiene acceso al sistema de cobros y no puede procesar reembolsos.</p>
+
+        <h3>6. Limitaciones Técnicas</h3>
+        <p>El usuario reconoce que GlpFlow opera exclusivamente con almacenamiento local. Por lo tanto:</p>
+        <ul>
+          <li>No hay copia de seguridad en la nube;</li>
+          <li>No es posible recuperar datos tras desinstalar o cambiar de dispositivo;</li>
+          <li>Cada dispositivo mantiene datos independientes;</li>
+          <li>El desarrollador no se responsabiliza por pérdida de datos por fallos del dispositivo, desinstalación, daños físicos o eventos externos.</li>
+        </ul>
+
+        <h3>7. Eliminación de Datos</h3>
+        <p>El usuario puede eliminar todos los datos almacenados localmente mediante la opción disponible en la app. Esta acción es permanente e irreversible.</p>
+
+        <h3>8. Exención de Responsabilidad</h3>
+        <p>GlpFlow no sustituye la orientación profesional. El uso de la app es responsabilidad exclusiva del usuario.</p>
+
+        <h3>9. Cambios en los Términos</h3>
+        <p>Estos Términos pueden cambiarse en cualquier momento. Los cambios relevantes se comunicarán dentro de la app.</p>
+
+        <h3>10. Ley Aplicable</h3>
+        <p>Estos Términos se rigen por las leyes aplicables, respetando la legislación vigente.</p>
+      </div>
+
+      <!-- PT -->
+      <div data-lang="pt">
+        <h2>TERMOS DE USO – GlpFlow (iOS)</h2>
+        <p><strong>Última atualização:</strong> 17/12/2025</p>
+
+        <p>Ao utilizar o GlpFlow, você concorda com os termos e condições descritos abaixo.</p>
+
+        <h3>1. Aceitação dos Termos</h3>
+        <p>O uso do GlpFlow implica na aceitação integral destes Termos de Uso e da Política de Privacidade.</p>
+
+        <h3>2. Descrição do Serviço</h3>
+        <p>O GlpFlow é um aplicativo de acompanhamento de hábitos e bem-estar que funciona localmente no dispositivo do usuário, sem necessidade de login ou conexão contínua com a internet.</p>
+
+        <h3>3. Uso do Aplicativo</h3>
+        <p>O usuário compromete-se a utilizar o aplicativo de forma lícita, sendo responsável pelas informações inseridas e pela segurança do próprio dispositivo.</p>
+
+        <h3>4. Funcionalidades Premium</h3>
+        <p>Alguns recursos podem estar disponíveis apenas para usuários que adquirirem uma assinatura Premium, conforme descrito nas telas de pagamento do aplicativo.</p>
+
+        <h3>5. Assinaturas e Renovação Automática</h3>
+        <h3 style="margin-top:10px;">5.1 Assinaturas</h3>
+        <p>As assinaturas Premium são cobradas pela loja de aplicativos do dispositivo, utilizando a conta do usuário nessa plataforma.</p>
+
+        <h3 style="margin-top:10px;">5.2 Renovação Automática</h3>
+        <p>As assinaturas são renovadas automaticamente ao final de cada período, salvo se forem canceladas pelo usuário com pelo menos 24 (vinte e quatro) horas de antecedência do término do período vigente.</p>
+
+        <h3 style="margin-top:10px;">5.3 Gerenciamento e Cancelamento</h3>
+        <p>O gerenciamento da assinatura, incluindo cancelamento e desativação da renovação automática, deve ser feito diretamente nas configurações da loja de aplicativos utilizada para a compra.</p>
+        <p>A desinstalação do aplicativo não cancela a assinatura.</p>
+
+        <h3 style="margin-top:10px;">5.4 Reembolsos</h3>
+        <p>Pedidos de reembolso devem ser realizados diretamente pela loja de aplicativos onde a compra foi efetuada, conforme as políticas da plataforma. O desenvolvedor não possui acesso ao sistema de cobrança e não pode processar estornos.</p>
+
+        <h3>6. Limitações Técnicas</h3>
+        <p>O usuário reconhece que o GlpFlow opera exclusivamente com armazenamento local. Dessa forma:</p>
+        <ul>
+          <li>Não há backup em nuvem;</li>
+          <li>Não é possível recuperar dados após desinstalação ou troca de dispositivo;</li>
+          <li>Cada dispositivo mantém dados independentes;</li>
+          <li>O desenvolvedor não se responsabiliza por perda de dados causada por falhas do dispositivo, desinstalação, danos físicos ou eventos externos.</li>
+        </ul>
+
+        <h3>7. Exclusão de Dados</h3>
+        <p>O usuário pode excluir todos os dados armazenados localmente por meio da opção disponível no aplicativo. Essa ação é permanente e irreversível.</p>
+
+        <h3>8. Isenção de Responsabilidade</h3>
+        <p>O GlpFlow não substitui orientação profissional. O uso do aplicativo é de responsabilidade exclusiva do usuário.</p>
+
+        <h3>9. Alterações nos Termos</h3>
+        <p>Estes Termos podem ser alterados a qualquer momento. Alterações relevantes serão comunicadas dentro do próprio aplicativo.</p>
+
+        <h3>10. Foro</h3>
+        <p>Estes Termos são regidos pelas leis aplicáveis, respeitando a legislação vigente.</p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="card" style="margin-top:14px;">
+      <!-- EN -->
+      <div data-lang="en" class="active">
+        <h2>Contact</h2>
+        <p>If you need support, reach us at:</p>
+        <div class="mutedbox">
+          <p style="margin:0;"><strong>Email:</strong> <a href="mailto:contato@i9techia.com.br">contato@i9techia.com.br</a></p>
+        </div>
+        <p class="small">© 2025 i9techia.com.br — GlpFlow</p>
+      </div>
+
+      <!-- ES -->
+      <div data-lang="es">
+        <h2>Contacto</h2>
+        <p>Si necesitas soporte, contáctanos en:</p>
+        <div class="mutedbox">
+          <p style="margin:0;"><strong>Email:</strong> <a href="mailto:contato@i9techia.com.br">contato@i9techia.com.br</a></p>
+        </div>
+        <p class="small">© 2025 i9techia.com.br — GlpFlow</p>
+      </div>
+
+      <!-- PT -->
+      <div data-lang="pt">
+        <h2>Contato</h2>
+        <p>Se precisar de suporte, fale com a gente em:</p>
+        <div class="mutedbox">
+          <p style="margin:0;"><strong>E-mail:</strong> <a href="mailto:contato@i9techia.com.br">contato@i9techia.com.br</a></p>
+        </div>
+        <p class="small">© 2025 i9techia.com.br — GlpFlow</p>
+      </div>
+    </section>
+
+    <footer>
+      <p id="footerline">GlpFlow — Support page</p>
+    </footer>
+  </div>
+
+  <script>
+    (function(){
+      const buttons = {
+        en: document.getElementById("btn-en"),
+        es: document.getElementById("btn-es"),
+        pt: document.getElementById("btn-pt"),
+      };
+
+      const subtitle = document.getElementById("subtitle");
+      const footerline = document.getElementById("footerline");
+
+      const labels = {
+        en: { subtitle: "Support • Privacy Policy • Terms", footer: "GlpFlow — Support page" },
+        es: { subtitle: "Soporte • Política de Privacidad • Términos", footer: "GlpFlow — Página de soporte" },
+        pt: { subtitle: "Suporte • Política de Privacidade • Termos", footer: "GlpFlow — Página de suporte" },
+      };
+
+      function setLang(lang){
+        // blocks
+        document.querySelectorAll("[data-lang]").forEach(el => el.classList.remove("active"));
+        document.querySelectorAll('[data-lang="'+lang+'"]').forEach(el => el.classList.add("active"));
+
+        // buttons
+        Object.keys(buttons).forEach(k => buttons[k].setAttribute("aria-pressed", k === lang ? "true" : "false"));
+
+        // html lang attr
+        document.documentElement.setAttribute("lang", lang === "pt" ? "pt-BR" : (lang === "es" ? "es" : "en"));
+
+        // small labels
+        subtitle.textContent = labels[lang].subtitle;
+        footerline.textContent = labels[lang].footer;
+
+        // persist
+        try { localStorage.setItem("glpflow_lang", lang); } catch(e){}
+      }
+
+      // initial language: stored > browser > EN
+      const stored = (function(){ try { return localStorage.getItem("glpflow_lang"); } catch(e){ return null; } })();
+      const nav = (navigator.language || "en").toLowerCase();
+
+      let initial = "en";
+      if (stored && ["en","es","pt"].includes(stored)) initial = stored;
+      else if (nav.startsWith("pt")) initial = "pt";
+      else if (nav.startsWith("es")) initial = "es";
+
+      setLang(initial);
+
+      buttons.en.addEventListener("click", () => setLang("en"));
+      buttons.es.addEventListener("click", () => setLang("es"));
+      buttons.pt.addEventListener("click", () => setLang("pt"));
+    })();
+  </script>
+</body>
+</html>
